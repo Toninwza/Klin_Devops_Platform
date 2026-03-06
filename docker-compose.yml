@@ -1,0 +1,39 @@
+version: "3.8"
+
+services:
+  nginx:
+    init: true
+    build:
+      context: .
+      dockerfile: infra/nginx/Dockerfile
+    ports:
+      - "80:80"
+    restart: always
+    networks:
+      - klin-network
+    depends_on:
+      backend:
+        condition: service_healthy
+
+  backend:
+    init: true
+    build:
+      context: ./back
+      dockerfile: Dockerfile
+    restart: always
+    env_file:
+      - .env
+    environment:
+      - NODE_ENV=production
+    networks:
+      - klin-network
+    healthcheck:
+      test: ["CMD", "wget", "-qO-", "http://localhost:3000/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 10s
+
+networks:
+  klin-network:
+    driver: bridge

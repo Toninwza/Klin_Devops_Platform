@@ -1,0 +1,83 @@
+[
+  {
+    "id": 1,
+    "name": "Siam Amber",
+    "brand": "Bangkok Atelier",
+    "family": "Oriental",
+    "accords": [
+      { "name": "Amber", "percentage": 40 },
+      { "name": "Woody", "percentage": 30 },
+      { "name": "Spicy", "percentage": 20 },
+      { "name": "Sweet", "percentage": 10 }
+    ],
+    "pyramid": {
+      "top": ["Bergamot", "Cardamom"],
+      "middle": ["Jasmine", "Rose"],
+      "base": ["Sandalwood", "Amber", "Vanilla"]
+    },
+    "voting": {
+      "longevity": 85,
+      "sillage": 70
+    }
+  },
+  {
+    "id": 2,
+    "name": "Bamboo Rain",
+    "brand": "Naturals",
+    "family": "Green",
+    "accords": [
+      { "name": "Green", "percentage": 50 },
+      { "name": "Aquatic", "percentage": 30 },
+      { "name": "Fresh", "percentage": 20 }
+    ],
+    "pyramid": {
+      "top": ["Bamboo Leaves", "Dew"],
+      "middle": ["Lotus", "Water Lily"],
+      "base": ["Musk", "Vetiver"]
+    },
+    "voting": {
+      "longevity": 60,
+      "sillage": 50
+    }
+  },
+  {
+    "id": 3,
+    "name": "Royal Jasmine",
+    "brand": "Thai Heritage",
+    "family": "Floral",
+    "accords": [
+      { "name": "White Floral", "percentage": 60 },
+      { "name": "Sweet", "percentage": 25 },
+      { "name": "Powdery", "percentage": 15 }
+    ],
+    "pyramid": {
+      "top": ["Neroli", "Green Leaves"],
+      "middle": ["Jasmine Sambac", "Tuberose"],
+      "base": ["White Musk", "Cedar"]
+    },
+    "voting": {
+      "longevity": 75,
+      "sillage": 80
+    }
+  },
+  {
+    "id": 4,
+    "name": "Smoked Pomelo",
+    "brand": "Citrus Co.",
+    "family": "Citrus",
+    "accords": [
+      { "name": "Citrus", "percentage": 45 },
+      { "name": "Smoky", "percentage": 30 },
+      { "name": "Woody", "percentage": 25 }
+    ],
+    "pyramid": {
+      "top": ["Pomelo", "Grapefruit"],
+      "middle": ["Incense", "Black Pepper"],
+      "base": ["Vetiver", "Guaiac Wood"]
+    },
+    "voting": {
+      "longevity": 65,
+      "sillage": 60
+    }
+  }
+]
