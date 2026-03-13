@@ -25,7 +25,7 @@ function App() {
       </main>
 
       <footer className="bg-charcoal text-offwhite py-8 text-center text-sm">
-        <p>&copy; {new Date().getFullYear()} Klin Scent Database. DevOps MVP.</p>
+        <p>&copy; {new Date().getFullYear()} Klin Scent Database.</p>
       </footer>
     </div>
   )
